@@ -1,0 +1,7 @@
+.page404 a {
+    text-decoration: none;
+}
+
+.page404 a:hover {
+    text-decoration: underline;
+}
