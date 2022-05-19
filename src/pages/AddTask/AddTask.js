@@ -18,7 +18,7 @@ const AddTask = () => {
         const task = { name, description }
 
         //post input data to database
-        const url = `http://localhost:5000/task`;
+        const url = `https://still-island-50226.herokuapp.com/task`;
         fetch(url, {
             method: 'POST',
             headers: {

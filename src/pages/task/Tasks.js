@@ -8,7 +8,7 @@ const Tasks = () => {
     const [style, setStyle] = useState(false)
 
     useEffect(() => {
-        fetch('http://localhost:5000/task')
+        fetch('https://still-island-50226.herokuapp.com/task')
             .then(res => res.json())
             .then(data => {
                 setTasks(data)
@@ -18,7 +18,7 @@ const Tasks = () => {
     const deleteTask = id => {
         const Confirm = window.confirm('Are you sure, you want to delete?');
         if (Confirm) {
-            const url = `http://localhost:5000/task/${id}`;
+            const url = `https://still-island-50226.herokuapp.com/task/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
